@@ -1,0 +1,30 @@
+[project]
+name = "sgs"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "yshuai", email = "yuanshuai1995@outlook.com" }
+]
+dependencies = [
+    "pip>=24.3.1",
+    "psutil>=6.1.0",
+    "pyqt5>=5.15.11",
+    "pyautogui>=0.9.54",
+    "keyboard>=0.13.5",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/sgs"]

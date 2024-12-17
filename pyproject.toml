@@ -1,16 +1,15 @@
 [project]
-name = "sgs"
+name = "sgs-toolkit"
 version = "0.1.0"
-description = "Add your description here"
+description = "三国杀工具集"
 authors = [
     { name = "yshuai", email = "yuanshuai1995@outlook.com" }
 ]
 dependencies = [
-    "pip>=24.3.1",
-    "psutil>=6.1.0",
-    "pyqt5>=5.15.11",
-    "pyautogui>=0.9.54",
-    "keyboard>=0.13.5",
+    "pyqt5~=5.15.9",
+    "psutil~=5.9.0",
+    "pygetwindow~=0.0.9",
+    "pyautogui~=0.9.54",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
@@ -21,10 +20,15 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "pyinstaller>=6.5.0"
+]
 
 [tool.hatch.metadata]
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/sgs"]
+
+[project.scripts]
+sgs-toolkit = "src.sgs.disconnect_manager:main"

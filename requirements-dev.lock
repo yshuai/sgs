@@ -10,8 +10,15 @@
 #   universal: false
 
 -e file:.
+altgraph==0.17.4
+    # via pyinstaller
 mouseinfo==0.1.3
     # via pyautogui
+packaging==24.2
+    # via pyinstaller
+    # via pyinstaller-hooks-contrib
+pefile==2023.2.7
+    # via pyinstaller
 psutil==5.9.8
     # via sgs-toolkit
 pyautogui==0.9.54
@@ -19,6 +26,9 @@ pyautogui==0.9.54
 pygetwindow==0.0.9
     # via pyautogui
     # via sgs-toolkit
+pyinstaller==6.11.1
+pyinstaller-hooks-contrib==2024.10
+    # via pyinstaller
 pymsgbox==1.0.9
     # via pyautogui
 pyperclip==1.9.0
@@ -35,3 +45,8 @@ pyscreeze==1.0.1
     # via pyautogui
 pytweening==1.2.0
     # via pyautogui
+pywin32-ctypes==0.2.3
+    # via pyinstaller
+setuptools==75.6.0
+    # via pyinstaller
+    # via pyinstaller-hooks-contrib

@@ -1,0 +1,9 @@
+{
+    "client": {
+        "game_path": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Sgsc10th\\Sgsc10th.exe",
+        "process_name": "Sgsc10th.exe"
+    },
+    "browser": {
+        "window_title": "三国杀十周年"
+    }
+} 
